@@ -5,6 +5,11 @@
     <current-page></current-page>
     <versions></versions>
     <links></links>
+    <b-alert state="danger" dismissible :show="showDismissibleAlert" @dismissed="showDismissibleAlert=false">
+      Dismissible Alert!
+    </b-alert>
+    <b-button @click="showDismissibleAlert=true" variant="primary">Button A</b-button>
+    <b-button variant="danger">Button B</b-button>
   </div>
 </template>
 
@@ -17,6 +22,11 @@
       CurrentPage,
       Links,
       Versions
+    },
+    data () {
+      return {
+        showDismissibleAlert: false
+      }
     },
     name: 'landing-page'
   }
