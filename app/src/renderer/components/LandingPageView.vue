@@ -1,15 +1,12 @@
 <template>
-  <div>
-    <img src="./LandingPageView/assets/logo.png" alt="electron-vue">
-    <h1>Welcome.</h1>
-    <current-page></current-page>
-    <versions></versions>
-    <links></links>
-    <b-alert state="danger" dismissible :show="showDismissibleAlert" @dismissed="showDismissibleAlert=false">
-      Dismissible Alert!
-    </b-alert>
-    <b-button @click="showDismissibleAlert=true" variant="primary">Button A</b-button>
-    <b-button variant="danger">Button B</b-button>
+  <div class="landing-page">
+    <div>
+      <img src="./LandingPageView/assets/logo.png" alt="electron-vue">
+      <h1>Welcome.</h1>
+      <current-page></current-page>
+      <versions></versions>
+      <links></links>
+    </div>
   </div>
 </template>
 
@@ -23,16 +20,15 @@
       Links,
       Versions
     },
-    data () {
-      return {
-        showDismissibleAlert: false
-      }
-    },
     name: 'landing-page'
   }
 </script>
 
 <style scoped>
+  div.landing-page {
+    margin-top: 100px;
+    text-align: center;
+  }
   img {
     margin-top: -25px;
     width: 450px;
