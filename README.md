@@ -1,29 +1,31 @@
-## Scaffolding
+# Scaffolding
 
-# init project
+## init project
 ```sh
+# install vue cli
 npm install -g vue-cli
+# generate project files
 vue init simulatedgreg/electron-vue electron-vue-playground
 ```
 
-# VueJS plugins
+## VueJS plugins
 - [vue-electron](https://github.com/SimulatedGREG/vue-electron)
 - [vue-resource](https://github.com/pagekit/vue-resource)
 - [vue-router](https://github.com/vuejs/vue-router)
 - [vuex](https://github.com/vuejs/vuex)
 
-# ESLint
+## ESLint
 - [Standard](https://github.com/feross/standard) 
 
-# Testing
+## Testing
 - [Karma](https://github.com/karma-runner/karma)
 - [Mocha](https://github.com/mochajs/mocha)
 - [Spectron](https://github.com/electron/spectron)
 
-# Builder
+## Builder
 - [electron-builder](https://github.com/electron-userland/electron-builder)
 
-## Build Setup
+# Build Setup
 
 ```sh
 # install dependencies
