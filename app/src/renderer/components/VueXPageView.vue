@@ -1,12 +1,21 @@
 <template>
   <div class="vuex-page">
     <h1>VueX</h1>
+    <progress-bar-card></progress-bar-card>
+    <controls-card></controls-card>
+    <controls-card></controls-card>
   </div>
 </template>
 
 <script>
+  import ProgressBarCard from './VueXPageView/ProgressBarCard'
+  import ControlsCard from './VueXPageView/ControlsCard'
   export default {
-    name: 'vuex-page'
+    name: 'vuex-page',
+    components: {
+      ProgressBarCard,
+      ControlsCard
+    }
   }
 </script>
 
