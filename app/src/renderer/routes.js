@@ -15,9 +15,19 @@ export default [
     component: require('components/ElectronPageView')
   },
   {
+    path: '/archive',
+    name: 'archive-page',
+    component: require('components/ArchivePageView')
+  },
+  {
     path: '/vuex',
     name: 'vuex-page',
     component: require('components/VueXPageView')
+  },
+  {
+    path: '/webview',
+    name: 'webview-page',
+    component: require('components/WebViewPageView')
   },
   {
     path: '*',

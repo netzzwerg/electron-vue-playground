@@ -2,6 +2,9 @@
 
 import { app, BrowserWindow } from 'electron'
 
+// Install `electron-debug` with `devtron`
+require('electron-debug')({ showDevTools: true, enabled: true })
+
 let mainWindow
 const winURL = process.env.NODE_ENV === 'development'
   ? `http://localhost:${require('../../../config').port}`

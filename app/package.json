@@ -6,12 +6,16 @@
   "dependencies": {
     "babel-runtime": "^6.23.0",
     "bootstrap-vue": "^0.15.0",
+    "electron-debug": "^1.1.0",
+    "glob": "^7.1.1",
     "vue": "^2.1.10",
     "vue-electron": "^1.0.6",
     "vue-resource": "^1.0.3",
     "vue-router": "^2.1.2",
     "vuex": "^2.1.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "devtron": "^1.4.0"
+  },
   "author": "Béla Varga"
 }

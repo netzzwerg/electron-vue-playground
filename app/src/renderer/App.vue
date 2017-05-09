@@ -8,14 +8,20 @@
         <router-link tag="li" to="/" router-link-exact-active="active" class="nav-item">
           <a class="nav-link">Home</a>
         </router-link>
-        <router-link tag="li" to="/bootstrap" router-link-exact-active="active" class="nav-item">
-          <a class="nav-link">Bootstrap</a>
-        </router-link>
         <router-link tag="li" to="/electron" router-link-exact-active="active" class="nav-item">
           <a class="nav-link">Electron</a>
         </router-link>
+        <router-link tag="li" to="/archive" router-link-exact-active="active" class="nav-item">
+          <a class="nav-link">Archive</a>
+        </router-link>
+        <router-link tag="li" to="/bootstrap" router-link-exact-active="active" class="nav-item">
+          <a class="nav-link">Bootstrap</a>
+        </router-link>
         <router-link tag="li" to="/vuex" router-link-exact-active="active" class="nav-item">
           <a class="nav-link">VueX</a>
+        </router-link>
+        <router-link tag="li" to="/webview" router-link-exact-active="active" class="nav-item">
+          <a class="nav-link">WebView</a>
         </router-link>
       </b-nav>
     </b-navbar>

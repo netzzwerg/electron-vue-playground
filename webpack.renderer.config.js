@@ -9,6 +9,7 @@ const webpack = require('webpack')
 
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 let rendererConfig = {
   devtool: '#eval-source-map',
@@ -79,6 +80,12 @@ let rendererConfig = {
     ]
   },
   plugins: [
+    new CopyWebpackPlugin([{
+      from: 'app/webview',
+      to: 'webview'
+    }], {
+      copyUnmodified: true
+    }),
     new ExtractTextPlugin('styles.css'),
     new HtmlWebpackPlugin({
       filename: 'index.html',

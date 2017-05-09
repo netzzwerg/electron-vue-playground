@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title>webview</title>
+  <style type="text/css">
+    @import url(https://fonts.googleapis.com/css?family=Lato:300);
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body { height: 100%; }
+
+    body {
+      padding: 0px;
+      background-color: #ffffff;
+      font-family: Lato, Helvetica, sans-serif;
+    }
+
+    p {
+      padding: 10px 20px;
+    }
+
+    code {
+      color: #0d4a59;
+      background-color: #f1f3f4;
+    }
+  </style>
+</head>
+<body>
+  <p>Use the <code>webview</code> tag to embed ‘guest’ content (such as web pages) in your Electron app. The guest content is contained within the <code>webview</code> container. An embedded page within your app controls how the guest content is laid out and rendered.</p>
+  <p>Unlike an <code>iframe</code>, the <code>webview</code> runs in a separate process than your app. It doesn’t have the same permissions as your web page and all interactions between your app and embedded content will be asynchronous. This keeps your app safe from the embedded content.</p>
+</body>
+</html>
